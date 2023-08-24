@@ -82,7 +82,10 @@ export const Swiper = () => {
       </div>
 
       <div className="px-40 py-20">
-        <img src="" alt="" />
+        <div className="mb-16">
+          <img src="/assets/Image52.png" alt="" />
+        </div>
+
         <div className="flex justify-between">
           <div className="w-1/2">
             <h1 className="font-sans leading-normal text-4xl">
@@ -106,11 +109,7 @@ export const Swiper = () => {
                     />
                   </p>
 
-                  {menu && (
-                    <div>
-                        Faq opened
-                    </div>
-                  )}
+                  {menu && <div>Faq opened</div>}
                 </>
               );
             })}

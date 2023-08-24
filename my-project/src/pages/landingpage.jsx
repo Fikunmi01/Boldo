@@ -3,6 +3,8 @@ import { Navbar } from "../components/navbar";
 import { Hero } from "../components/hero";
 import { Services } from "../components/services";
 import { Swiper } from "../components/swiper";
+import { Blog } from "../components/blog";
+import { Footer } from "../components/footer";
 
 export const LandingPage = () => {
   return (
@@ -15,6 +17,8 @@ export const LandingPage = () => {
         <Hero />
         <Services />
         <Swiper/>
+        <Blog/>
+        <Footer/>
       </div>
     </>
   );

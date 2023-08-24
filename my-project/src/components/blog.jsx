@@ -3,48 +3,66 @@ import React from "react";
 export const Blog = () => {
   const blogArray = [
     {
-      imgSrc: "",
+      imgSrc: "/assets/Rectangle1.png",
       title: "Pitch termsheet backing validation focus release.",
       authorImg: "/assets/Ellipse5.png",
       author: "Chandler Bing",
     },
     {
-      imgSrc: "",
+      imgSrc: "/assets/Rectangle2.png",
       title:
         "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
-      authorImg: "",
+      authorImg: "/assets/Ellipse6.png",
       author: "Rachel Green",
     },
     {
-      imgSrc: "",
+      imgSrc: "/assets/Rectangle3.png",
       title:
         "Beta prototype sales iPad gen-z marketing network effects value proposition",
-      authorImg: "",
+      authorImg: "/assets/Ellipse7.png",
       author: "Monica Geller",
     },
   ];
   return (
     <>
       <div>
-        <p>Our Blog</p>
-        <h1>Value proposition accelerator product management venture</h1>
+        <p className="text-center text-xl font-normal mb-2 text-gray">
+          Our Blog
+        </p>
+        <h1 className="text-5xl w-2/3 text-blaack text-center m-auto leading-snug mb-10">
+          Value proposition accelerator product management venture
+        </h1>
 
-        <div>
-          <div>
-            <img src="" alt="" />
+        <div className="px-40 flex gap-6 mb-10">
+          {blogArray.map((item) => {
+            return (
+              <div className="relative w-80">
+                <img src={item.imgSrc} className="mb-3" alt="" />
 
-            <span>
-              <p>Category</p>
-              <p>November 22, 2021</p>
-            </span>
+                <span className="flex gap-4 mb-4">
+                  <p className="font-sans text-base text-darkBlue font-bold">
+                    Category
+                  </p>
+                  <p className="font-normal text-base font-sans text-gray">
+                    November 22, 2021
+                  </p>
+                </span>
 
-            <p>Pitch termsheet backing validation focus release.</p>
+                <p className="font-normal text-black text-xl mb-4 h-28 w-64">
+                  {item.title}
+                </p>
 
-            <span>
-              <img src="" alt="" />
-              <p>Chandler Bing</p>
-            </span>
-          </div>
+                <span className="flex items-center gap-3">
+                  <img src={item.authorImg} alt="" />
+                  <p className="text-base font-normal text-black">{item.author}</p>
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="px-40 text-center py-20">
+          <button className="bg-white border-2 font-bold text-xl px-10 text-darkBlue rounded-full py-3">Load more</button>
         </div>
       </div>
     </>
