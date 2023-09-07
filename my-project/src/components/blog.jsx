@@ -26,17 +26,17 @@ export const Blog = () => {
   return (
     <>
       <div>
-        <p className="text-center text-xl font-normal mb-2 text-gray">
+        <p className="text-center text-lg md:text-xl font-normal mb-2 text-gray">
           Our Blog
         </p>
-        <h1 className="text-5xl w-2/3 text-blaack text-center m-auto leading-snug mb-10">
+        <h1 className="md:text-5xl text-xl md:w-2/3 px-3 text-blaack text-center m-auto leading-snug mb-10">
           Value proposition accelerator product management venture
         </h1>
 
-        <div className="px-40 flex gap-6 mb-10">
+        <div className="md:px-40 px-3 overflow-scroll md:overflow-hidden flex gap-6 mb-10">
           {blogArray.map((item) => {
             return (
-              <div className="relative w-80">
+              <div className="relative  w-80">
                 <img src={item.imgSrc} className="mb-3" alt="" />
 
                 <span className="flex gap-4 mb-4">
@@ -61,8 +61,8 @@ export const Blog = () => {
           })}
         </div>
 
-        <div className="px-40 text-center py-20">
-          <button className="bg-white border-2 font-bold text-xl px-10 text-darkBlue rounded-full py-3">Load more</button>
+        <div className="md:px-40 px-3 text-center py-10 md:py-20">
+          <button className="bg-white border-2 font-bold md:text-xl px-3 py-2 text-lg md:px-10 text-darkBlue rounded-full md:py-3">Load more</button>
         </div>
       </div>
     </>
