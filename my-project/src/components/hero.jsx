@@ -5,15 +5,15 @@ export const Hero = () => {
     <div className="bg-darkBlue md:px-20 md:py-10 px-3 text-white font-sans">
       <div className=" md:flex flex flex-col-reverse gap-4 md:flex-row md:items-center md:gap-24 ">
         <div className="md:w-1/2">
-          <h1 className="md:text-5xl text-3xl leading-normal">
+          <h1 className="md:text-5xl text-3xl leading-normal mb-3">
             Save time by building fast with Boldo Template
           </h1>
-          <p className="text-base font-normal leading-relaxed mb-5 md:mb-10">
+          <p className="text-base font-normal leading-relaxed mb-5 md:mb-10 font-serif">
             Funding handshake buyer business-to-business metrics iPad
             partnership.First mover advantage innovator success deployment
             non-disclosure
           </p>
-          <div className="flex gap-3 md:gap-6 mb-5 md:mb-0">
+          <div className="flex gap-3 md:gap-6 mb-5 md:mb-0 font-serif">
             <button className="bg-green text-darkBlue text-sm px-3 py-1 font-black md:text-xl md:px-7 md:py-3 rounded-full">
               Buy template
             </button>

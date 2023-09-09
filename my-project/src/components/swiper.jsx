@@ -43,19 +43,19 @@ export const Swiper = () => {
             An enterprise template to ramp up your company website
           </h1>
 
-          <div className="flex items-center gap-4">
+          <div className="md:flex items-center gap-4 hidden">
             <img src="/assets/leftArrow.png" className="w-14" alt="" />
             <img src="/assets/rightArrow.png" className="w-14" alt="" />
           </div>
         </div>
 
-        <div className="md:px-20 flex md:justify-center md:overflow-hidden overflow-x-scroll gap-3 py-10 md:gap-6 font-sans">
+        <div className="md:px-20 flex md:justify-center md:overflow-hidden noScroll overflow-x-scroll gap-3 py-10 md:gap-6 font-serif">
           {swiperArray.map((item) => {
             return (
               <>
-                <div className="boxShadowTwo md:px-10 rounded-lg md:py-10 py-3 px-3 md:w-80 bg-white">
+                <div className="boxShadowTwo h-1/4 md:px-10 rounded-lg md:py-10 py-3 px-3 md:w-80 bg-white">
                   <div className="w-52">
-                    <p className="text-blaack font-normal md:text-xl w-full md:h-40 mb-3 h-32">
+                    <p className="text-blaack font-normal md:text-xl w-full mb-3 ">
                       "{item.description}"
                     </p>
                     <div className="flex items-center gap-3">
@@ -89,7 +89,7 @@ export const Swiper = () => {
               stay open
             </h1>
           </div>
-          <div className="">
+          <div className="font-serif">
             <>
               <div className="border-solid border-gray mb-5 pb-4 border-b-2">
                 <p className="flex items-center gap-10  font-normal text-xl text-blaack">
@@ -103,7 +103,7 @@ export const Swiper = () => {
                     alt=""
                   />
                 </p>
-                {menu && <div>Faq opened</div>}
+                {menu && <div>Seed round direct mailing non-disclosure agreement</div>}
               </div>
 
               <div className="border-gray border-b-2 mb-5 pb-4">
@@ -118,7 +118,7 @@ export const Swiper = () => {
                     alt=""
                   />
                 </p>
-                {menuTwo && <div>Faq2 Opened</div>}
+                {menuTwo && <div>Pitch termsheet backing validation focus release.</div>}
               </div>
             </>
           </div>

@@ -11,7 +11,7 @@ export const LandingPage = () => {
     <>
       <div className="font-sans">
         <div className="absolute right-0 ">
-          <img src="/assets/ellipse.png" className=" " alt="" />
+          <img src="/assets/ellipse.png" className="" alt="" />
         </div>
         <Navbar />
         <Hero />

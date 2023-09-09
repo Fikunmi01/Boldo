@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: 'Manrope, sans-serif',
+        serif: 'Open sans, sans-serif' 
       },
       colors: {
         darkBlue: 'rgba(10, 38, 64, 1)', 

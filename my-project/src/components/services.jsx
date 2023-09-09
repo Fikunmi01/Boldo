@@ -39,19 +39,19 @@ export const Services = () => {
   return (
     <>
       <div className="font-sans md:py-10 md:px-20 mt-5">
-        <p className="text-center text-lg md:text-xl font-normal mb-2 text-gray">
+        <p className="text-center text-lg md:text-xl font-normal mb-2 text-gray font-serif">
           Our Services
         </p>
         <h1 className="md:text-5xl text-2xl md:w-2/3 text-blaack text-center px-3 md:px-0 m-auto leading-snug">
           Handshake infographic mass market crowdfunding iteration
         </h1>
 
-        <div className="flex md:flex-row flex-col px-3 py-5 w-full md:px-20 md:py-10">
+        <div className="flex md:flex-row flex-col px-3 py-5 w-full md:px-20 md:py-10 font-serif">
           {serviceArray.map((item) => {
             return (
               <>
                 <div className="">
-                  <img src={item.imgSrc} className="pb-1 md:pb-3" alt="" />
+                  <img src={item.imgSrc} className="pb-1 md:pb-3 m-auto md:m-0" alt="" />
                   <h2 className="text-xl md:text-2xl text-blaack font-normal">
                     {item.title}
                   </h2>
@@ -78,14 +78,14 @@ export const Services = () => {
             {aimsArray.map((aim) => {
               return (
                 <>
-                  <p className="flex items-center gap-3 md:mb-5 mb-3 leading-snug md:leading-relaxed">
+                  <p className="flex items-center gap-3 md:mb-5 mb-3 leading-snug md:leading-relaxed font-serif">
                     <img src="/assets/mark.png" alt="" />
                     {aim.aim}
                   </p>
                 </>
               );
             })}
-            <button className="px-6 py-3 mt-5 md:mt-0 font-black text-white rounded-full bg-darkBlue">
+            <button className="px-6 py-3 mt-5 md:mt-0 font-black text-white rounded-full bg-darkBlue font-serif">
               Start now
             </button>
           </div>
@@ -107,7 +107,7 @@ export const Services = () => {
                       } flex items-center mb-5 boxShadow gap-3 px-2 py-1 md:py-3 md:px-5 text-blaack font-semibold`}
                     >
                       <img src={aim.img} alt="" />
-                      <p className="text-base">{aim.aim}</p>
+                      <p className="text-base font-serif">{aim.aim}</p>
                     </div>
                   </>
                 );
