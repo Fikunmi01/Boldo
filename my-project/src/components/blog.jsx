@@ -36,7 +36,7 @@ export const Blog = () => {
           Value proposition accelerator product management venture
         </h1>
 
-        <div className="md:px-40 px-3 overflow-scroll md:overflow-hidden noScroll flex gap-6 mb-10 ">
+        <div className="md:px-40 px-3 overflow-scroll md:overflow-hidden noScroll flex gap-6 mb-10">
           {blogArray.map((item) => {
             return (
               <div className="relative font-serif w-80" key={item.id}>

@@ -55,22 +55,23 @@ export const Swiper = () => {
         <div className="md:px-20 flex md:justify-center md:overflow-hidden noScroll overflow-x-scroll gap-3 py-10 md:gap-6 font-serif">
           {swiperArray.map((item) => {
             return (
-              <div key={item.id}>
-                <div className="boxShadowTwo h-1/4 md:px-10 rounded-lg md:py-10 py-3 px-3 md:w-80 bg-white">
-                  <div className="w-52">
-                    <p className="text-blaack font-normal md:text-xl w-full mb-3 ">
-                      "{item.description}"
-                    </p>
-                    <div className="flex items-center gap-3">
-                      <img src={item.imgSrc} alt="" />
-                      <div>
-                        <p className="text-base font-bold text-darkBlue">
-                          {item.name}
-                        </p>
-                        <p className="text-darkBlue font-normal text-sm">
-                          {item.role}
-                        </p>
-                      </div>
+              <div
+                key={item.id}
+                className="boxShadowTwo  md:px-10 rounded-lg md:py-10 py-3 px-3 md:w-80 bg-white h-1/4"
+              >
+                <div className="w-52">
+                  <p className="text-blaack font-normal md:text-xl w-full mb-3 ">
+                    "{item.description}"
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <img src={item.imgSrc} alt="" />
+                    <div>
+                      <p className="text-base font-bold text-darkBlue">
+                        {item.name}
+                      </p>
+                      <p className="text-darkBlue font-normal text-sm">
+                        {item.role}
+                      </p>
                     </div>
                   </div>
                 </div>
