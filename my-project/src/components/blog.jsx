@@ -3,12 +3,14 @@ import React from "react";
 export const Blog = () => {
   const blogArray = [
     {
+      id:1,
       imgSrc: "/assets/Rectangle1.png",
       title: "Pitch termsheet backing validation focus release.",
       authorImg: "/assets/Ellipse5.png",
       author: "Chandler Bing",
     },
     {
+      id:2,
       imgSrc: "/assets/Rectangle2.png",
       title:
         "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
@@ -16,6 +18,7 @@ export const Blog = () => {
       author: "Rachel Green",
     },
     {
+      id:3,
       imgSrc: "/assets/Rectangle3.png",
       title:
         "Beta prototype sales iPad gen-z marketing network effects value proposition",
@@ -36,7 +39,7 @@ export const Blog = () => {
         <div className="md:px-40 px-3 overflow-scroll md:overflow-hidden noScroll flex gap-6 mb-10 ">
           {blogArray.map((item) => {
             return (
-              <div className="relative font-serif w-80">
+              <div className="relative font-serif w-80" key={item.id}>
                 <img src={item.imgSrc} className="mb-3" alt="" />
 
                 <span className="flex gap-4 mb-4">

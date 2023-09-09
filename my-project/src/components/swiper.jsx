@@ -13,6 +13,7 @@ export const Swiper = () => {
 
   const swiperArray = [
     {
+      id: 1,
       description:
         "Buyer buzz partner network disruptive non-disclosure agreement business",
       imgSrc: "/assets/Ellipse2.png",
@@ -20,6 +21,7 @@ export const Swiper = () => {
       role: "Manager @ Howarts",
     },
     {
+      id: 2,
       description:
         "Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.",
       imgSrc: "/assets/Ellipse3.png",
@@ -27,6 +29,7 @@ export const Swiper = () => {
       role: "Manager @ Slytherin",
     },
     {
+      id: 3,
       description:
         "Release facebook responsive web design business model canvas seed money monetization.",
       imgSrc: "/assets/Ellipse4.png",
@@ -52,7 +55,7 @@ export const Swiper = () => {
         <div className="md:px-20 flex md:justify-center md:overflow-hidden noScroll overflow-x-scroll gap-3 py-10 md:gap-6 font-serif">
           {swiperArray.map((item) => {
             return (
-              <>
+              <div key={item.id}>
                 <div className="boxShadowTwo h-1/4 md:px-10 rounded-lg md:py-10 py-3 px-3 md:w-80 bg-white">
                   <div className="w-52">
                     <p className="text-blaack font-normal md:text-xl w-full mb-3 ">
@@ -71,7 +74,7 @@ export const Swiper = () => {
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
@@ -103,7 +106,9 @@ export const Swiper = () => {
                     alt=""
                   />
                 </p>
-                {menu && <div>Seed round direct mailing non-disclosure agreement</div>}
+                {menu && (
+                  <div>Seed round direct mailing non-disclosure agreement</div>
+                )}
               </div>
 
               <div className="border-gray border-b-2 mb-5 pb-4">
@@ -118,7 +123,9 @@ export const Swiper = () => {
                     alt=""
                   />
                 </p>
-                {menuTwo && <div>Pitch termsheet backing validation focus release.</div>}
+                {menuTwo && (
+                  <div>Pitch termsheet backing validation focus release.</div>
+                )}
               </div>
             </>
           </div>

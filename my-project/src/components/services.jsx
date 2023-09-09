@@ -3,16 +3,19 @@ import React from "react";
 export const Services = () => {
   const serviceArray = [
     {
+      id:1,
       imgSrc: "/assets/service1.png",
       title: "Cool feature title",
       description: "Learning curve network effects return on investment.",
     },
     {
+      id:2,
       imgSrc: "/assets/service2.png",
       title: "Even cooler feature",
       description: "Learning curve network effects return on investment.",
     },
     {
+      id:3,
       imgSrc: "/assets/service3.png",
       title: "Cool feature title",
       description: "Learning curve network effects return on investment.",
@@ -49,8 +52,8 @@ export const Services = () => {
         <div className="flex md:flex-row flex-col px-3 py-5 w-full md:px-20 md:py-10 font-serif">
           {serviceArray.map((item) => {
             return (
-              <>
-                <div className="">
+              <div key={item.id}>
+                <div>
                   <img src={item.imgSrc} className="pb-1 md:pb-3 m-auto md:m-0" alt="" />
                   <h2 className="text-xl md:text-2xl text-blaack font-normal">
                     {item.title}
@@ -61,7 +64,7 @@ export const Services = () => {
                     Explore page <img src="/assets/arrow-right.png" alt="" />
                   </button>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
@@ -77,12 +80,12 @@ export const Services = () => {
             </h2>
             {aimsArray.map((aim) => {
               return (
-                <>
+                <div key={aim.id}>
                   <p className="flex items-center gap-3 md:mb-5 mb-3 leading-snug md:leading-relaxed font-serif">
                     <img src="/assets/mark.png" alt="" />
                     {aim.aim}
                   </p>
-                </>
+                </div>
               );
             })}
             <button className="px-6 py-3 mt-5 md:mt-0 font-black text-white rounded-full bg-darkBlue font-serif">
@@ -100,7 +103,7 @@ export const Services = () => {
             <div>
               {aimsArray.map((aim) => {
                 return (
-                  <>
+                  <div key={aim.id}>
                     <div
                       className={`${
                         aim.id === 1 ? "bg-darkBlue text-white" : "bg-white"
@@ -109,7 +112,7 @@ export const Services = () => {
                       <img src={aim.img} alt="" />
                       <p className="text-base font-serif">{aim.aim}</p>
                     </div>
-                  </>
+                  </div>
                 );
               })}
             </div>
